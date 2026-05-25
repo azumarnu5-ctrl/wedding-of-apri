@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Apri & Yuli</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- COVER -->
+  <section class="cover-page">
+
+    <div class="overlay"></div>
+
+    <div class="cover-content">
+
+      <p class="cover-text">
+        The Wedding Of
+      </p>
+
+      <h1>
+        Apri & Yuli
+      </h1>
+
+      <p class="cover-date">
+        Jumat, 05 Juni 2026
+      </p>
+
+      <button
+        class="open-btn"
+        id="open-btn">
+
+        Buka Undangan
+
+      </button>
+
+    </div>
+
+  </section>
+  <script>
+
+  const openBtn =
+  document.getElementById('open-btn');
+
+  openBtn.addEventListener('click', () => {
+
+    // BUAT FLAG MUSIC
+    localStorage.setItem(
+      'playMusic',
+      'true'
+    );
+
+    // PINDAH HALAMAN
+    window.location.href =
+    'invitation.html';
+
+  });
+
+</script>
+</body>
+</html>
